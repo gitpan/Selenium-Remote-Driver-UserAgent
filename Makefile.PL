@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Emulate mobile devices by setting user agents when using webdriver",
+  "ABSTRACT" => "(DEPRECATED) Use Selenium::UserAgent instead",
   "AUTHOR" => "Daniel Gempesaw <gempesaw\@gmail.com>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "Test::ParallelSubtest" => 0
   },
-  "VERSION" => "0.03",
+  "VERSION" => "0.0301",
   "test" => {
     "TESTS" => "t/*.t"
   }

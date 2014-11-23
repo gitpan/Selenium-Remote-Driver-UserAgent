@@ -1,5 +1,5 @@
 ---
-abstract: 'Emulate mobile devices by setting user agents when using webdriver'
+abstract: '(DEPRECATED) Use Selenium::UserAgent instead'
 author:
   - 'Daniel Gempesaw <gempesaw@gmail.com>'
 build_requires:
@@ -27,4 +27,4 @@ requires:
 resources:
   bugtracker: https://github.com/gempesaw/Selenium-Remote-Driver-UserAgent/issues
   repository: git://github.com/gempesaw/Selenium-Remote-Driver-UserAgent.git
-version: '0.03'
+version: '0.0301'

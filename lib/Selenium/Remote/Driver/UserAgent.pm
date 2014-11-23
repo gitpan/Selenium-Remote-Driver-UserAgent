@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 package Selenium::Remote::Driver::UserAgent;
-$Selenium::Remote::Driver::UserAgent::VERSION = '0.03';
-# ABSTRACT: Emulate mobile devices by setting user agents when using webdriver
+$Selenium::Remote::Driver::UserAgent::VERSION = '0.0301';
+# ABSTRACT: (DEPRECATED) Use Selenium::UserAgent instead
 use Moo;
 use JSON;
 use Cwd qw/abs_path/;
@@ -188,11 +188,11 @@ __END__
 
 =head1 NAME
 
-Selenium::Remote::Driver::UserAgent - Emulate mobile devices by setting user agents when using webdriver
+Selenium::Remote::Driver::UserAgent - (DEPRECATED) Use Selenium::UserAgent instead
 
 =head1 VERSION
 
-version 0.03
+version 0.0301
 
 =head1 SYNOPSIS
 
@@ -205,6 +205,10 @@ version 0.03
     my $driver = Selenium::Remote::Driver->new_from_caps(%$caps);
 
 =head1 DESCRIPTION
+
+DEPRECATED! This module has been renamed to L<Selenium::UserAgent>,
+and future development will take place there. This module will
+eventually be deleted from the CPAN.
 
 This package will help you test your websites on mobile devices by
 convincing your browsers to masquerade as a mobile device. You can
